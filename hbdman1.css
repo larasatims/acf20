@@ -1,0 +1,342 @@
+:root {
+    --main-color: #6dbb73;
+    --dark-green: #2d5230;
+    --box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    --footer-green: #3a5b3a;
+    --footer-text: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #c7dcc7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none !important;
+    text-transform: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-padding-top: 60px;
+}
+
+section {
+    padding: 30px 0;
+    background: #fff;
+}
+
+section:nth-child(odd) {
+    background: #f8f8fe;
+}
+
+.heading {
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 20px;
+    color: var(--dark-green);
+    font-size: 25px;
+    font-weight: bold;
+    margin: auto;
+    max-width: 600px;
+}
+
+.heading span {
+    color: var(--main-color);
+}
+
+.link-btn {
+    display: inline-block;
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 50px;
+    padding: 5px 25px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+}
+
+.link-btn:hover {
+    color: #fff;
+    background: var(--dark-green);
+}
+
+header {
+    box-shadow: var(--box-shadow);
+    background: #fff;
+}
+
+header .logo {
+    font-size: 20px;
+    color: var(--dark-green);
+}
+
+header .logo span {
+    color: var(--main-color);
+}
+
+header .navbar a {
+    margin-left: 3px;
+    border-radius: 50px;
+    color: #2d5230;
+    padding: 5px 15px;
+}
+
+header .navbar a:active,
+header .navbar a:hover {
+    background: var(--main-color);
+    box-shadow: var(--box-shadow);
+    color: #fff;
+}
+
+header .navbar a.logo:active,
+header .navbar a.logo:hover {
+    background: none; 
+    box-shadow: none; 
+    color: inherit; 
+}
+
+#menu-bar {
+    color: var(--dark-green);
+    cursor: pointer;
+    font-size: 25px;
+    transition: .2s linear;
+}
+
+.missions {
+    min-height: 100vh;
+    background: url(../images/home-bg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.missions .content span {
+    color: var(--main-color);
+    font-size: 20px;
+}
+
+.missions .content h3 {
+    color: var(--dark-green);
+    font-size: 31px;
+    font-weight: bolder;
+}
+
+.greeting .content h3 {
+    color: var(--dark-green);
+    font-size: 33px;
+    font-weight: bold;
+}
+
+.greeting .content p {
+    color: #777;
+    font-size: 14px;
+}
+
+.things-that-id-like-about-you {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.things-that-id-like-about-you .box {
+    flex: 0 0 calc(33.333% - 20px);
+    margin-bottom: 20px;
+    background: #f8f8fe;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+}
+
+.things-that-id-like-about-you .box img {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+.things-that-id-like-about-you .text-content {
+    padding: 20px;
+}
+
+.things-that-id-like-about-you .text-content h3 {
+    color: var(--dark-green);
+    font-size: 18px;
+}
+
+.things-that-id-like-about-you .text-content p {
+    color: #777;
+    font-size: 14px;
+}
+
+.songs-that-remind-me-of-you .box {
+    max-width: 600px; 
+}
+
+.songs-that-remind-me-of-you .playlist-content {
+    display: flex;
+    align-items: center;
+}
+
+.songs-that-remind-me-of-you .playlist-cover {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.songs-that-remind-me-of-you .playlist-text {
+    flex: 1;
+}
+
+.songs-that-remind-me-of-you .playlist-text h3 {
+    margin-top: 0;
+    color: var(--dark-green);
+    font-weight: bold;
+}
+
+.some-pictures .container {
+    position: relative; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 500px;
+}
+
+/* Add Bootstrap classes to turn each box into a Bootstrap card */
+.some-pictures .box {
+    flex: 0 0 calc(33.333% - 10px); 
+    margin-bottom: 20px;
+    background: #f8f8fe;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 5px; 
+    margin-right: 5px; 
+    padding-top: 15px; 
+    padding-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.some-pictures .box img {
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+}
+
+.some-pictures .box .content {
+    padding: 20px;
+}
+
+.some-pictures .box .content h3 {
+    color: var(--dark-green);
+    font-size: 18px;
+}
+
+.some-pictures .box .content p {
+    color: #777;
+    font-size: 14px;
+}
+
+.some-pictures .box:not(:last-child) {
+    margin-right: 20px;
+}
+
+.some-pictures .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px; 
+    transform: translateY(-50%);
+}
+
+footer {
+    background-color: var(--footer-green); 
+    color: var(--footer-text);
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.empty-col {
+    flex: 1;
+    background-color: #f8f8fe;
+}
+
+@media (max-width: 991px) {
+    .missions .content h3 {
+        font-size: 30px;
+    }
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.menu-toggle {
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: auto;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .brand {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    header .container {
+        padding: 0 15px;
+    }
+
+    header .nav {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 56px;
+        left: 0;
+        background-color: #fff;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        display: none;
+    }
+
+    header .nav.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .navbar a {
+        padding: 0px;
+        width: 100%;
+    }
+
+    #menu-bar {
+        display: block;
+    }
+  
+    .menu-toggle {
+        font-size: 15px; 
+        cursor: pointer;
+        margin-left: auto;
+        padding-right: 100px; 
+        display: none;
+    }
+}
